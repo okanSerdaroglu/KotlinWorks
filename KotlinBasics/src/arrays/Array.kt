@@ -20,7 +20,7 @@ fun main() {
 
     var days = arrayOf("monday","friday","tuesday","wednesday")
 
-    println(days[2])
-
-
+    for( day in days){
+        println("Today is $day")
+    }
 }
