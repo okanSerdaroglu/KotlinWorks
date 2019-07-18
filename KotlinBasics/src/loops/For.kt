@@ -10,7 +10,7 @@ fun main() {
 
     var name = "okan"
     for (i in name) {
-        if (!i.equals(name.last())) {
+        if (i != name.last()) {
             print("$i,")
         } else {
             println(i)
