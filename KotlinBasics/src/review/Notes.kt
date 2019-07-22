@@ -20,7 +20,7 @@ fun main() {
         }
     }
 
-    println("$charResult")
+    println(charResult)
 
     /** write code that prints multiplication table */
 

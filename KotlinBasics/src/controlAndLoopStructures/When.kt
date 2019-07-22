@@ -3,13 +3,12 @@ package controlAndLoopStructures
 fun main() {
 
     /** when structure is the same with switch in java
-     *  you dont have to use break keyword
+     *  you don't have to use break keyword
      * */
 
     println("enter your note")
-    var note = readLine()!!.toInt()
 
-    var result = when (note) {
+    val result = when (readLine()!!.toInt()) {
 
         in 0..44 -> {
             println("you get 1")
@@ -43,7 +42,7 @@ fun main() {
 
     }
 
-    if (result.equals('X')) {
+    if (result == 'X') {
         println("you entered wrong value")
     } else {
         println("result : $result")
