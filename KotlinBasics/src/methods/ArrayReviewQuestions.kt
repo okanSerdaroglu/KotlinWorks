@@ -8,11 +8,11 @@ fun main() {
         println(factorialArray[i])
     }
 
-    var numbers = Array(5){0}
+    val numbers = Array(5){0}
 
     for (index in 0 until numbers.size){
         println("Enter number : ")
-        var number = readLine()!!.toInt()
+        val number = readLine()!!.toInt()
         numbers[index] = number
     }
 
