@@ -18,7 +18,7 @@ fun main() {
 
     println(max(8, 4))
 
-    println((Math.random() * 100).toInt()) // math randrom generates numbers between 1 and 100
+    println((Math.random() * 100).toInt()) // math random generates numbers between 1 and 100
 
     // generate two numbers and write firstly bigger number
 

@@ -46,7 +46,7 @@ fun main() {
     println(names[2])
     println(names.size)
     println(names.remove("okan")) // returns boolean
-    names.set(0,"osman")
+    names[0] = "osman"
 
     println(names)
 
