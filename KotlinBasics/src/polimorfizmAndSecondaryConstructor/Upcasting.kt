@@ -8,7 +8,7 @@ open class Soldier {
 
 }
 
-class Er : Soldier () {
+class Er : Soldier() {
 
     override fun sayHello() {
 
@@ -18,33 +18,28 @@ class Er : Soldier () {
 
 }
 
-class YuzBasi : Soldier () {
+class YuzBasi : Soldier() {
 
     override fun sayHello() {
-
         println("Yuzbasi said hello")
-
     }
 
 }
 
 fun main() {
-
     val soldier = Soldier()
-    val er = Er ()
-    val yuzBasi = YuzBasi ()
+    val er = Er()
+    val yuzBasi = YuzBasi()
+
+    /* var soldierTwo = Soldier()
+     soldierTwo = Er()
+     soldierTwo = YuzBasi ()*/
 
     hazirOl(soldier)
     hazirOl(er)
     hazirOl(yuzBasi)
-
-
-
 }
 
-fun hazirOl (soldier: Soldier) {
-
+fun hazirOl(soldier: Soldier) {
     soldier.sayHello()
-
-
 }
