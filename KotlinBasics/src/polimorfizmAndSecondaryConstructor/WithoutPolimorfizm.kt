@@ -12,12 +12,28 @@ open class Working {
 
 }
 
-class Coordinator : Working() {
+open class Coordinator : Working() {
 
     override var position: String = "Coordinator"
 
     override fun work() {
         println("$position working")
+    }
+
+}
+
+class SystemProgrammer : Coordinator() {
+
+    override var position: String = "System Programmer"
+    override fun work() {
+
+        println("$position worked")
+
+    }
+
+    fun examineSystem() {
+
+        println("$position is examining system")
     }
 
 }
@@ -46,11 +62,18 @@ fun main() {
 
     val workers = Array(4) { Any() }
 
+    val workerArray = Array(3) { Working() }
+
     workers[0] = Coordinator()
     workers[1] = Programmer()
     workers[2] = Manager()
+    workerArray[0] = SystemProgrammer()
+    workerArray[1] = Programmer()
+    workerArray[2] = Coordinator()
 
     startWorking(workers)
+    println()
+    startWorkingWithPolymorphism(workerArray)
 }
 
 fun startWorking(workers: Array<Any>) {
@@ -67,9 +90,23 @@ fun startWorking(workers: Array<Any>) {
                 worker.work()
             }
             else -> {
-                val worker = Manager ()
+                val worker = Manager()
                 worker.work()
             }
+        }
+
+    }
+
+}
+
+fun startWorkingWithPolymorphism(workers: Array<Working>) {
+
+    for (worker in workers) {
+
+        worker.work()
+
+        if (worker is SystemProgrammer) {
+            worker.examineSystem()
         }
 
     }
