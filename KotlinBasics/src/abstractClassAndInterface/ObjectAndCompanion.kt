@@ -1,0 +1,8 @@
+package abstractClassAndInterface
+
+fun main() {
+
+
+
+
+}
