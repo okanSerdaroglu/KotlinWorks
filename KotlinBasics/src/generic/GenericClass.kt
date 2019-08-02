@@ -18,13 +18,13 @@ fun main() {
     val writeStringArray = WriteStringArray()
     writeStringArray.writeArray(stringArray)
 
-    val writeGeneralArray = writeGenericClassArray(stringArray)
+    val writeGeneralArray = WriteGenericClassArray(stringArray)
     writeGeneralArray.writeArray(stringArray)
 
 
 }
 
-class writeGenericClassArray<GeneralArray>(var array:Array<GeneralArray>) {
+class WriteGenericClassArray<GeneralArray>(var array:Array<GeneralArray>) {
 
 
     fun writeArray (array: Array<GeneralArray>) {
