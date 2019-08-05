@@ -4,7 +4,7 @@ package collections
 
 fun main() {
 
-    val immutableSet = setOf("okan","osman","ali","okan") // dont list repeated values
+    val immutableSet = setOf("okan","osman","ali","okan") // don't list repeated values
 
     for (element in immutableSet) {
         println(element)
