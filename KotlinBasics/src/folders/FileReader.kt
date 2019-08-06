@@ -7,7 +7,7 @@ fun main() {
     var folder: FileReader? = null
     try {
         folder = FileReader("firstFolder.txt")
-        var readValues: Int = 0
+        var readValues = 0
         /*do {
             readValues = folder.read()
             //print(readValues)
@@ -27,6 +27,8 @@ fun main() {
     }
 
     val folderTwo = FileReader("firstFolder.txt")
+    println()
+    println("read from forEachLine method")
     folderTwo.forEachLine {
         println(it)
     } /* each row reads from forEachLine method and assign it string */
